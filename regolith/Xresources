@@ -1,0 +1,2 @@
+i3-wm.binding.exit_app: Shift+emacron
+i3-wm.binding.kill_app: Mod1+emacron

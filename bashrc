@@ -143,6 +143,11 @@ export AWS_SDK_LOAD_CONFIG=1
 
 export ANSIBLE_VAULT_PASSWORD_FILE=~/.vault_pass
 
+# Custom alias
+
+alias k="kubectl"
+complete -F __start_kubectl k
+
 # Integrate Fuzzy Finder
 source /usr/share/doc/fzf/examples/key-bindings.bash
 source /usr/share/doc/fzf/examples/completion.bash
