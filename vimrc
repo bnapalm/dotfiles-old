@@ -4,7 +4,7 @@ set nocompatible
 " Helps force plugins to load correctly when it is turned back on below
 filetype off
 
-" TODO: Load plugins here (pathogen or vundle)
+" Load plugins here (pathogen or vundle)
 execute pathogen#infect()
 
 " Turn on syntax highlighting
@@ -47,3 +47,6 @@ set t_Co=256
 let g:zenburn_high_Contrast=0
 let g:zenburn_subdued_LineNr=1
 colors zenburn
+
+" Terraform auto-fmt
+let g:terraform_fmt_on_save=1
