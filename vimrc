@@ -50,3 +50,8 @@ colors zenburn
 
 " Terraform auto-fmt
 let g:terraform_fmt_on_save=1
+
+" Buffer shortcuts
+nnoremap gb         :buffers<CR>:buffer<Space>
+nnoremap <PageUp>   :bprevious<CR>
+nnoremap <PageDown> :bnext<CR>
