@@ -129,7 +129,7 @@ set -o vi
 # User specific aliases and functions
 
 # Add this to your PATH if it’s not already declared
-export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/.local/bin:$HOME/bin
  
 # Powerline configuration
 if [ -f $HOME/.local/lib/python3/site-packages/powerline/bindings/bash/powerline.sh ]; then
