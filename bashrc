@@ -151,3 +151,6 @@ complete -F __start_kubectl k
 # Integrate Fuzzy Finder
 source /usr/share/doc/fzf/examples/key-bindings.bash
 source /usr/share/doc/fzf/examples/completion.bash
+
+export VISUAL=vim
+export EDITOR="$VISUAL"
