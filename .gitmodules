@@ -1,3 +1,6 @@
 [submodule "vim/bundle/vim-terraform"]
 	path = vim/bundle/vim-terraform
 	url = https://github.com/hashivim/vim-terraform.git
+[submodule "kitty/kitty-themes"]
+	path = kitty/kitty-themes
+	url = https://github.com/dexpota/kitty-themes.git
