@@ -43,10 +43,15 @@ set autoindent
 set smartindent
 " set cindent
 
-set t_Co=256
-let g:zenburn_high_Contrast=0
-let g:zenburn_subdued_LineNr=1
-colors zenburn
+" True color
+set termguicolors
+
+autocmd vimenter * ++nested colorscheme gruvbox
+set background=dark
+
+" let g:zenburn_high_Contrast=0
+" let g:zenburn_subdued_LineNr=1
+" colors zenburn
 
 " Terraform auto-fmt
 let g:terraform_fmt_on_save=1
