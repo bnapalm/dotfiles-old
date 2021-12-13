@@ -18,7 +18,6 @@ set modelines=0
 
 " Show line numbers
 set number relativenumber
-" highlight LineNr ctermbg=NONE ctermfg=grey
 
 " Show file stats
 set ruler
@@ -46,6 +45,7 @@ set smartindent
 " True color
 set termguicolors
 
+" gruvbox dark colors
 autocmd vimenter * ++nested colorscheme gruvbox
 set background=dark
 
@@ -56,7 +56,17 @@ set background=dark
 " Terraform auto-fmt
 let g:terraform_fmt_on_save=1
 
+" tab-complete menu
+set wildmenu
+
 " Buffer shortcuts
 nnoremap gb         :buffers<CR>:buffer<Space>
 nnoremap <PageUp>   :bprevious<CR>
 nnoremap <PageDown> :bnext<CR>
+
+" Save your fingers on custom keyboard
+
+map ī k
+map s j
+map ē h
+map ā l
