@@ -17,6 +17,8 @@ setopt PUSHD_SILENT
 
 fpath=(/home/black/.config/zsh/plugins $fpath)
 
+# General completion
+source ${XDG_CONFIG_HOME}/zsh/completion.zsh
 # Kubectl completion
 source <(kubectl completion zsh)
 compdef __start_kubectl k
