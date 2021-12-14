@@ -1,17 +1,31 @@
 " Don't try to be vi compatible
 set nocompatible
 
+let mapleader=" "
+
 " Helps force plugins to load correctly when it is turned back on below
 filetype off
 
 " Load plugins here (pathogen or vundle)
 execute pathogen#infect()
 
-" Turn on syntax highlighting
+" Terraform auto-fmt
+let g:terraform_fmt_on_save=1
+
+let g:airline_powerline_fonts=1
+
+
+" Turn on syntax highlighting and search hl
 syntax on
+set hlsearch
+" Clear search
+map  <leader>h :noh<CR>
 
 " For plugins to load correctly
 filetype plugin indent on
+
+" Allow unsaved background buffers
+set hidden
 
 " Security
 set modelines=0
@@ -53,9 +67,6 @@ set background=dark
 " let g:zenburn_subdued_LineNr=1
 " colors zenburn
 
-" Terraform auto-fmt
-let g:terraform_fmt_on_save=1
-
 " tab-complete menu
 set wildmenu
 
@@ -70,3 +81,5 @@ map ī k
 map s j
 map ē h
 map ā l
+
+set scrolloff=6
