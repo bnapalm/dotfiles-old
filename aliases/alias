@@ -22,6 +22,8 @@ alias l='ls -CF'
 ###########
 
 alias k="kubectl"
+alias kns="kubens"
+alias ktx="kubectx"
 
 ###########
 #   git   #
