@@ -13,3 +13,12 @@
 [submodule "vim/bundle/fugitive"]
 	path = vim/bundle/fugitive
 	url = https://tpope.io/vim/fugitive.git
+[submodule "vim/bundle/fern.vim"]
+	path = vim/bundle/fern.vim
+	url = https://github.com/lambdalisue/fern.vim.git
+[submodule "vim/bundle/nerdfont.vim"]
+	path = vim/bundle/nerdfont.vim
+	url = https://github.com/lambdalisue/nerdfont.vim
+[submodule "vim/bundle/fern-renderer-nerdfont.vim"]
+	path = vim/bundle/fern-renderer-nerdfont.vim
+	url = https://github.com/lambdalisue/fern-renderer-nerdfont.vim

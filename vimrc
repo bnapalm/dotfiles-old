@@ -1,5 +1,5 @@
-" Don't try to be vi compatible
-set nocompatible
+" General settings
+set nocompatible splitbelow splitright
 
 let mapleader=" "
 
@@ -13,11 +13,13 @@ execute pathogen#infect()
 let g:terraform_fmt_on_save=1
 
 let g:airline_powerline_fonts=1
-
+let g:fern#renderer = "nerdfont"
 
 " Turn on syntax highlighting and search hl
 syntax on
 set hlsearch
+
+set colorcolumn=81
 " Clear search
 map  <leader>h :noh<CR>
 
@@ -83,3 +85,6 @@ map ē h
 map ā l
 
 set scrolloff=6
+
+" Custom command for saving as sudo
+command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
