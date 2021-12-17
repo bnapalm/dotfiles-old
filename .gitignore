@@ -1,3 +1,7 @@
+nvim/site
+nvim/plugged
+nvim/site/autoload/plug.vim
+
 # ---> Vim
 # Swap
 [._]*.s[a-v][a-z]
