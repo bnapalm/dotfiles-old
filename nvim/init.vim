@@ -35,6 +35,7 @@ source $XDG_CONFIG_HOME/nvim/plugins/surround.vim
 source $XDG_CONFIG_HOME/nvim/plugins/lsp-config.vim
 source $XDG_CONFIG_HOME/nvim/plugins/polyglot.vim
 source $XDG_CONFIG_HOME/nvim/plugins/fern.vim
+source $XDG_CONFIG_HOME/nvim/plugins/telescope.vim
 call plug#end()
 doautocmd User PlugLoaded
 
@@ -76,6 +77,7 @@ map s j
 map ē h
 map ā l
 
+" Edit file under cursor
 map gf :edit <cfile><CR>
 
 " Language server bindings
@@ -87,6 +89,9 @@ nnoremap <silent> K <cmd>lua vim.lsp.buf.hover()<CR>
 nnoremap <silent> <C-k> <cmd>lua vim.lsp.buf.signature_help()<CR>
 nnoremap <silent> <C-n> <cmd>lua vim.lsp.buf.goto_prev()<CR>
 nnoremap <silent> <C-p> <cmd>lua vim.lsp.buf.goto_next()<CR>
+
+nmap <silent> <leader>tr :Fern . -drawer -toggle<CR>
+nmap <silent> <leader>tt :Fern . -reveal=% -drawer -toggle<CR>
 
 "-----------------------------
 "  Custom commands
